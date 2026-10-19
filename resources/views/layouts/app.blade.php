@@ -448,12 +448,18 @@
 
     <!-- Header / Navbar -->
     <header class="navbar">
-        <a href="{{ route('home') }}" class="nav-brand">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="7"></circle>
-                <polyline points="12 9 12 12 13.5 13.5"></polyline>
-                <path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"></path>
-            </svg>
+        <a href="{{ route('home') }}" class="nav-brand" style="display: flex; align-items: center; gap: 0.75rem;">
+            @if(file_exists(public_path('images/logo.png')))
+                <img src="{{ asset('images/logo.png') }}" alt="JC Urban Controlux" style="height: 38px; width: 38px; border-radius: 8px; object-fit: cover; box-shadow: 0 3px 10px rgba(0,0,0,0.12); border: 1px solid var(--gold-border);">
+            @elseif(file_exists(public_path('images/logo.svg')))
+                <img src="{{ asset('images/logo.svg') }}" alt="JC Urban Controlux" style="height: 38px; width: 38px; border-radius: 8px; object-fit: cover; box-shadow: 0 3px 10px rgba(0,0,0,0.12); border: 1px solid var(--gold-border);">
+            @else
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="7"></circle>
+                    <polyline points="12 9 12 12 13.5 13.5"></polyline>
+                    <path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"></path>
+                </svg>
+            @endif
             <span>Controlux</span>
         </a>
 

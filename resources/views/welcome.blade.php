@@ -45,14 +45,10 @@
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
             <!-- Relojes -->
-            <div id="relojes" class="glass-card" style="padding: 2rem; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+            <div id="relojes" class="glass-card" style="padding: 1.5rem; text-align: center; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden;">
                 <div>
-                    <div style="width: 60px; height: 60px; margin: 0 auto 1.2rem auto; background: rgba(184, 134, 11, 0.08); border: 1px solid var(--gold-border); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold-dark)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="7"></circle>
-                            <polyline points="12 9 12 12 13.5 13.5"></polyline>
-                            <path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"></path>
-                        </svg>
+                    <div style="height: 170px; margin: -1.5rem -1.5rem 1.2rem -1.5rem; overflow: hidden; background: #F9F9FB; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--gold-border);">
+                        <img src="{{ asset('images/reloj.webp') }}" alt="Relojes de Lujo" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
                     </div>
                     <h3 style="font-size: 1.2rem; font-weight: 700; letter-spacing: 1px; color: var(--text-main); margin-bottom: 0.6rem;">Relojes</h3>
                     <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 1.5rem;">
@@ -67,15 +63,10 @@
             </div>
 
             <!-- Perfumes -->
-            <div id="perfumes" class="glass-card" style="padding: 2rem; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+            <div id="perfumes" class="glass-card" style="padding: 1.5rem; text-align: center; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden;">
                 <div>
-                    <div style="width: 60px; height: 60px; margin: 0 auto 1.2rem auto; background: rgba(184, 134, 11, 0.08); border: 1px solid var(--gold-border); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold-dark)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M10 2h4"></path>
-                            <path d="M12 2v4"></path>
-                            <rect x="5" y="6" width="14" height="16" rx="3"></rect>
-                            <circle cx="12" cy="14" r="3"></circle>
-                        </svg>
+                    <div style="height: 170px; margin: -1.5rem -1.5rem 1.2rem -1.5rem; overflow: hidden; background: #F9F9FB; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--gold-border);">
+                        <img src="{{ asset('images/perfume.webp') }}" alt="Perfumes Exclusivos" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
                     </div>
                     <h3 style="font-size: 1.2rem; font-weight: 700; letter-spacing: 1px; color: var(--text-main); margin-bottom: 0.6rem;">Perfumes</h3>
                     <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 1.5rem;">
@@ -90,13 +81,10 @@
             </div>
 
             <!-- Accesorios -->
-            <div id="accesorios" class="glass-card" style="padding: 2rem; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+            <div id="accesorios" class="glass-card" style="padding: 1.5rem; text-align: center; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden;">
                 <div>
-                    <div style="width: 60px; height: 60px; margin: 0 auto 1.2rem auto; background: rgba(184, 134, 11, 0.08); border: 1px solid var(--gold-border); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold-dark)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                        </svg>
+                    <div style="height: 170px; margin: -1.5rem -1.5rem 1.2rem -1.5rem; overflow: hidden; background: #F9F9FB; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--gold-border);">
+                        <img src="{{ asset('images/accesorio.png') }}" alt="Accesorios de Lujo" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
                     </div>
                     <h3 style="font-size: 1.2rem; font-weight: 700; letter-spacing: 1px; color: var(--text-main); margin-bottom: 0.6rem;">Accesorios</h3>
                     <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 1.5rem;">
