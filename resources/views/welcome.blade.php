@@ -34,21 +34,12 @@
 
     <!-- Categorías Principales (RF-06) -->
     <div id="catalogo" style="margin-bottom: 4rem;">
-        <div style="text-align: center; margin-bottom: 2.5rem;">
-            <h2 style="font-size: 1.5rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--text-main); margin-bottom: 0.4rem;">
-                Nuestras Categorías
-            </h2>
-            <p style="color: var(--text-muted); font-size: 0.85rem;">
-                Piezas y fragancias seleccionadas bajo rigurosos estándares
-            </p>
-        </div>
-
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem;">
             <!-- Relojes -->
             <div id="relojes" class="glass-card" style="padding: 1.5rem; text-align: center; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden;">
                 <div>
                     <div style="height: 220px; margin: -1.5rem -1.5rem 1.2rem -1.5rem; overflow: hidden; background: #FFFFFF; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--gold-border); padding: 1.2rem; box-sizing: border-box;">
-                        <img src="{{ asset('images/reloj.webp') }}" alt="Relojes de Lujo" style="max-width: 90%; max-height: 90%; width: auto; height: auto; object-fit: contain; object-position: center; filter: drop-shadow(0 10px 18px rgba(0,0,0,0.08)); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;" onmouseover="this.style.transform='scale(1.08) translateY(-4px)'; this.style.filter='drop-shadow(0 16px 26px rgba(212, 175, 55, 0.25))'" onmouseout="this.style.transform='scale(1)'; this.style.filter='drop-shadow(0 10px 18px rgba(0,0,0,0.08))'">
+                        <img src="{{ asset('images/reloj.webp') }}?v=2" alt="Relojes de Lujo" style="max-width: 90%; max-height: 90%; width: auto; height: auto; object-fit: contain; object-position: center; filter: drop-shadow(0 10px 18px rgba(0,0,0,0.08)); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;" onmouseover="this.style.transform='scale(1.08) translateY(-4px)'; this.style.filter='drop-shadow(0 16px 26px rgba(212, 175, 55, 0.25))'" onmouseout="this.style.transform='scale(1)'; this.style.filter='drop-shadow(0 10px 18px rgba(0,0,0,0.08))'">
                     </div>
                     <h3 style="font-size: 1.2rem; font-weight: 700; letter-spacing: 1px; color: var(--text-main); margin-bottom: 0.6rem;">Relojes</h3>
                     <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 1.5rem;">
@@ -66,7 +57,7 @@
             <div id="perfumes" class="glass-card" style="padding: 1.5rem; text-align: center; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden;">
                 <div>
                     <div style="height: 220px; margin: -1.5rem -1.5rem 1.2rem -1.5rem; overflow: hidden; background: #FFFFFF; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--gold-border); padding: 1.2rem; box-sizing: border-box;">
-                        <img src="{{ asset('images/perfume.webp') }}" alt="Perfumes Exclusivos" style="max-width: 90%; max-height: 90%; width: auto; height: auto; object-fit: contain; object-position: center; filter: drop-shadow(0 10px 18px rgba(0,0,0,0.08)); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;" onmouseover="this.style.transform='scale(1.08) translateY(-4px)'; this.style.filter='drop-shadow(0 16px 26px rgba(212, 175, 55, 0.25))'" onmouseout="this.style.transform='scale(1)'; this.style.filter='drop-shadow(0 10px 18px rgba(0,0,0,0.08))'">
+                        <img src="{{ asset('images/perfume.webp') }}?v=2" alt="Perfumes Exclusivos" style="max-width: 90%; max-height: 90%; width: auto; height: auto; object-fit: contain; object-position: center; filter: drop-shadow(0 10px 18px rgba(0,0,0,0.08)); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;" onmouseover="this.style.transform='scale(1.08) translateY(-4px)'; this.style.filter='drop-shadow(0 16px 26px rgba(212, 175, 55, 0.25))'" onmouseout="this.style.transform='scale(1)'; this.style.filter='drop-shadow(0 10px 18px rgba(0,0,0,0.08))'">
                     </div>
                     <h3 style="font-size: 1.2rem; font-weight: 700; letter-spacing: 1px; color: var(--text-main); margin-bottom: 0.6rem;">Perfumes</h3>
                     <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 1.5rem;">
@@ -84,7 +75,7 @@
             <div id="accesorios" class="glass-card" style="padding: 1.5rem; text-align: center; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden;">
                 <div>
                     <div style="height: 220px; margin: -1.5rem -1.5rem 1.2rem -1.5rem; overflow: hidden; background: #FFFFFF; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--gold-border); padding: 1.2rem; box-sizing: border-box;">
-                        <img src="{{ asset('images/accesorio.png') }}" alt="Accesorios de Lujo" style="max-width: 90%; max-height: 90%; width: auto; height: auto; object-fit: contain; object-position: center; filter: drop-shadow(0 10px 18px rgba(0,0,0,0.08)); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;" onmouseover="this.style.transform='scale(1.08) translateY(-4px)'; this.style.filter='drop-shadow(0 16px 26px rgba(212, 175, 55, 0.25))'" onmouseout="this.style.transform='scale(1)'; this.style.filter='drop-shadow(0 10px 18px rgba(0,0,0,0.08))'">
+                        <img src="{{ asset('images/accesorio.png') }}?v=2" alt="Accesorios de Lujo" style="max-width: 90%; max-height: 90%; width: auto; height: auto; object-fit: contain; object-position: center; filter: drop-shadow(0 10px 18px rgba(0,0,0,0.08)); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;" onmouseover="this.style.transform='scale(1.08) translateY(-4px)'; this.style.filter='drop-shadow(0 16px 26px rgba(212, 175, 55, 0.25))'" onmouseout="this.style.transform='scale(1)'; this.style.filter='drop-shadow(0 10px 18px rgba(0,0,0,0.08))'">
                     </div>
                     <h3 style="font-size: 1.2rem; font-weight: 700; letter-spacing: 1px; color: var(--text-main); margin-bottom: 0.6rem;">Accesorios</h3>
                     <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 1.5rem;">
