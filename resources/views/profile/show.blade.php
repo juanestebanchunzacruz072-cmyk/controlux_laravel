@@ -7,7 +7,7 @@
     <!-- Encabezado de Perfil -->
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
         <div>
-            <h1 style="font-size: 1.8rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-light);">
+            <h1 style="font-size: 1.8rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--text-main);">
                 Mi Perfil
             </h1>
             <p style="color: var(--text-muted); font-size: 0.9rem;">
@@ -15,7 +15,7 @@
             </p>
         </div>
         <div>
-            <span style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(212, 175, 55, 0.12); border: 1px solid var(--gold-border); padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.82rem; font-weight: 600; color: var(--gold-light);">
+            <span style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(184, 134, 11, 0.08); border: 1px solid var(--gold-border); padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.82rem; font-weight: 600; color: var(--gold-dark);">
                 <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--gold);"></span>
                 Rol: {{ $user->rol->nombre ?? 'Cliente' }}
             </span>
@@ -26,11 +26,11 @@
         <!-- Columna 1: Información Personal (Sólo lectura RF-05) -->
         <div>
             <div class="glass-card" style="margin-bottom: 2rem;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(212,175,55,0.2); padding-bottom: 0.8rem;">
-                    <h2 style="font-size: 1.05rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; border-bottom: 1px solid var(--gold-border); padding-bottom: 0.8rem;">
+                    <h2 style="font-size: 1.05rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold-dark);">
                         Información Personal
                     </h2>
-                    <span style="font-size: 0.72rem; color: var(--text-muted); background: rgba(255,255,255,0.06); padding: 3px 8px; border-radius: 4px;">
+                    <span style="font-size: 0.72rem; color: var(--text-muted); background: rgba(0,0,0,0.04); padding: 3px 8px; border-radius: 4px;">
                         Protegido
                     </span>
                 </div>
@@ -57,14 +57,14 @@
                     </div>
                 </div>
 
-                <div style="margin-top: 1.5rem; padding: 0.8rem; background: rgba(255,255,255,0.02); border-left: 2px solid var(--gold); border-radius: 4px; font-size: 0.76rem; color: var(--text-muted); line-height: 1.5;">
+                <div style="margin-top: 1.5rem; padding: 0.8rem; background: #F9F9FB; border-left: 3px solid var(--gold); border-radius: 4px; font-size: 0.76rem; color: var(--text-muted); line-height: 1.5;">
                     Por motivos de seguridad (RF-05), los datos de identidad no pueden ser modificados. Si requieres un cambio, contacta a soporte.
                 </div>
             </div>
 
             <!-- Cambio de Contraseña -->
             <div class="glass-card">
-                <h2 style="font-size: 1.05rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; border-bottom: 1px solid rgba(212,175,55,0.2); padding-bottom: 0.8rem;">
+                <h2 style="font-size: 1.05rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold-dark); margin-bottom: 1.5rem; border-bottom: 1px solid var(--gold-border); padding-bottom: 0.8rem;">
                     Seguridad de la Cuenta
                 </h2>
 
@@ -100,11 +100,11 @@
         <div>
             <!-- Formulario de Envío Editable -->
             <div class="glass-card" style="margin-bottom: 2rem;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(212,175,55,0.2); padding-bottom: 0.8rem;">
-                    <h2 style="font-size: 1.05rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; border-bottom: 1px solid var(--gold-border); padding-bottom: 0.8rem;">
+                    <h2 style="font-size: 1.05rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold-dark);">
                         Datos de Envío & Entrega
                     </h2>
-                    <span style="font-size: 0.72rem; color: var(--gold-light); background: rgba(212,175,55,0.1); padding: 3px 8px; border-radius: 4px;">
+                    <span style="font-size: 0.72rem; color: var(--gold-dark); background: rgba(184,134,11,0.1); padding: 3px 8px; border-radius: 4px; font-weight: 600;">
                         Editable
                     </span>
                 </div>
@@ -147,21 +147,21 @@
 
             <!-- Historial Rápido de Pedidos (RF-17) -->
             <div class="glass-card">
-                <h2 style="font-size: 1.05rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; border-bottom: 1px solid rgba(212,175,55,0.2); padding-bottom: 0.8rem;">
+                <h2 style="font-size: 1.05rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold-dark); margin-bottom: 1.2rem; border-bottom: 1px solid var(--gold-border); padding-bottom: 0.8rem;">
                     Mis Últimos Pedidos
                 </h2>
 
                 @if($pedidos->count() > 0)
                     <div style="display: flex; flex-direction: column; gap: 0.8rem;">
                         @foreach($pedidos as $pedido)
-                            <div style="padding: 0.8rem 1rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(212,175,55,0.15); border-radius: 8px; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="padding: 0.8rem 1rem; background: #F9F9FB; border: 1px solid var(--gold-border); border-radius: 8px; display: flex; justify-content: space-between; align-items: center;">
                                 <div>
-                                    <strong style="color: var(--gold-light); font-size: 0.9rem;">Pedido #{{ $pedido->id_pedido }}</strong>
+                                    <strong style="color: var(--gold-dark); font-size: 0.9rem;">Pedido #{{ $pedido->id_pedido }}</strong>
                                     <div style="font-size: 0.75rem; color: var(--text-muted);">{{ \Carbon\Carbon::parse($pedido->fecha_pedido)->format('d/m/Y') }}</div>
                                 </div>
                                 <div style="text-align: right;">
                                     <div style="font-weight: 700; color: var(--text-main); font-size: 0.95rem;">{{ $pedido->total_formateado }}</div>
-                                    <span style="font-size: 0.72rem; padding: 2px 6px; border-radius: 4px; background: rgba(212,175,55,0.15); color: var(--gold-light);">
+                                    <span style="font-size: 0.72rem; padding: 2px 6px; border-radius: 4px; background: rgba(184,134,11,0.1); color: var(--gold-dark); font-weight: 600;">
                                         {{ $pedido->estado->nombre ?? 'Pendiente' }}
                                     </span>
                                 </div>

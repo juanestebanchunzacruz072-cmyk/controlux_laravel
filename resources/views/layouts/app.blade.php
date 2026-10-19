@@ -11,24 +11,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 
-    <!-- Estilos base Controlux -->
+    <!-- Estilos base Controlux (Tema Blanco de Lujo) -->
     <style>
         :root {
-            --bg-main: #0a0a0a;
-            --bg-surface: #121212;
-            --bg-card: rgba(22, 22, 22, 0.82);
-            --bg-card-hover: rgba(30, 30, 30, 0.95);
-            --gold: #D4AF37;
-            --gold-light: #F3E5AB;
-            --gold-dark: #997D20;
-            --gold-gradient: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA771C 100%);
-            --gold-border: rgba(212, 175, 55, 0.28);
-            --gold-border-focus: rgba(212, 175, 55, 0.85);
-            --text-main: #F5F5F7;
-            --text-muted: #A1A1A6;
-            --text-gold: #D4AF37;
-            --danger: #FF453A;
-            --success: #32D74B;
+            --bg-main: #FFFFFF;
+            --bg-surface: #F9F9FB;
+            --bg-card: #FFFFFF;
+            --bg-card-hover: #FFFFFF;
+            --gold: #B8860B;
+            --gold-light: #8A6D15;
+            --gold-dark: #66500F;
+            --gold-gradient: linear-gradient(135deg, #D4AF37 0%, #AA771C 100%);
+            --gold-border: rgba(184, 134, 11, 0.24);
+            --gold-border-focus: rgba(184, 134, 11, 0.85);
+            --text-main: #141416;
+            --text-muted: #65676B;
+            --text-gold: #997D20;
+            --danger: #D32F2F;
+            --success: #1E8E3E;
             --glass-blur: blur(14px);
         }
 
@@ -47,8 +47,8 @@
             flex-direction: column;
             overflow-x: hidden;
             background-image: 
-                radial-gradient(circle at 15% 15%, rgba(212, 175, 55, 0.05) 0%, transparent 40%),
-                radial-gradient(circle at 85% 85%, rgba(212, 175, 55, 0.04) 0%, transparent 45%);
+                radial-gradient(circle at 12% 15%, rgba(212, 175, 55, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 88% 85%, rgba(212, 175, 55, 0.04) 0%, transparent 45%);
             background-attachment: fixed;
         }
 
@@ -63,7 +63,7 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            background: rgba(10, 10, 10, 0.85);
+            background: rgba(255, 255, 255, 0.94);
             backdrop-filter: var(--glass-blur);
             -webkit-backdrop-filter: var(--glass-blur);
             border-bottom: 1px solid var(--gold-border);
@@ -71,6 +71,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
             transition: all 0.3s ease;
         }
 
@@ -100,7 +101,7 @@
 
         .nav-link {
             font-size: 0.88rem;
-            font-weight: 500;
+            font-weight: 600;
             letter-spacing: 1px;
             color: var(--text-muted);
             text-transform: uppercase;
@@ -109,7 +110,7 @@
         }
 
         .nav-link:hover, .nav-link.active {
-            color: var(--gold-light);
+            color: var(--gold-dark);
         }
 
         .nav-link::after {
@@ -136,7 +137,7 @@
         /* Buttons */
         .btn-gold {
             background: var(--gold-gradient);
-            color: #000;
+            color: #FFFFFF;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             font-size: 0.85rem;
@@ -150,20 +151,21 @@
             align-items: center;
             justify-content: center;
             gap: 0.5rem;
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
+            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.25);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
             transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         .btn-gold:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 22px rgba(212, 175, 55, 0.45);
-            filter: brightness(1.08);
-            color: #000;
+            box-shadow: 0 6px 22px rgba(184, 134, 11, 0.4);
+            filter: brightness(1.05);
+            color: #FFFFFF;
         }
 
         .btn-outline-gold {
             background: transparent;
-            color: var(--gold);
+            color: var(--gold-dark);
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
             font-size: 0.85rem;
@@ -182,8 +184,8 @@
 
         .btn-outline-gold:hover {
             border-color: var(--gold);
-            background: rgba(212, 175, 55, 0.1);
-            color: var(--gold-light);
+            background: rgba(212, 175, 55, 0.08);
+            color: var(--gold-dark);
             transform: translateY(-1px);
         }
 
@@ -193,7 +195,7 @@
         }
 
         .user-btn {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(0, 0, 0, 0.03);
             border: 1px solid var(--gold-border);
             padding: 0.5rem 1rem;
             border-radius: 50px;
@@ -209,19 +211,19 @@
 
         .user-btn:hover {
             border-color: var(--gold);
-            background: rgba(212, 175, 55, 0.12);
+            background: rgba(212, 175, 55, 0.08);
         }
 
         .user-dropdown {
             position: absolute;
             right: 0;
             top: calc(100% + 0.6rem);
-            background: rgba(18, 18, 18, 0.96);
+            background: #FFFFFF;
             border: 1px solid var(--gold-border);
             border-radius: 10px;
             min-width: 220px;
             padding: 0.5rem 0;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12);
             backdrop-filter: var(--glass-blur);
             display: none;
             flex-direction: column;
@@ -255,13 +257,13 @@
         }
 
         .dropdown-item:hover {
-            background: rgba(212, 175, 55, 0.12);
-            color: var(--gold-light);
+            background: rgba(212, 175, 55, 0.08);
+            color: var(--gold-dark);
         }
 
         .dropdown-divider {
             height: 1px;
-            background: rgba(255, 255, 255, 0.08);
+            background: rgba(0, 0, 0, 0.06);
             margin: 0.4rem 0;
         }
 
@@ -281,7 +283,6 @@
             align-items: center;
             gap: 0.8rem;
             margin-bottom: 1rem;
-            backdrop-filter: var(--glass-blur);
             animation: slideDown 0.3s ease;
         }
 
@@ -291,21 +292,21 @@
         }
 
         .alert-success {
-            background: rgba(50, 215, 75, 0.12);
-            border: 1px solid rgba(50, 215, 75, 0.4);
-            color: #70EF8B;
+            background: rgba(30, 142, 62, 0.08);
+            border: 1px solid rgba(30, 142, 62, 0.3);
+            color: #1E8E3E;
         }
 
         .alert-error {
-            background: rgba(255, 69, 58, 0.12);
-            border: 1px solid rgba(255, 69, 58, 0.4);
-            color: #FF8077;
+            background: rgba(211, 47, 47, 0.08);
+            border: 1px solid rgba(211, 47, 47, 0.3);
+            color: #D32F2F;
         }
 
         .alert-info {
-            background: rgba(212, 175, 55, 0.12);
+            background: rgba(184, 134, 11, 0.08);
             border: 1px solid var(--gold-border);
-            color: var(--gold-light);
+            color: var(--gold-dark);
         }
 
         /* Main Content */
@@ -319,8 +320,8 @@
 
         /* Footer */
         .footer {
-            border-top: 1px solid rgba(212, 175, 55, 0.15);
-            background: #080808;
+            border-top: 1px solid rgba(184, 134, 11, 0.16);
+            background: #F9F9FB;
             padding: 3rem 2rem 1.5rem;
             margin-top: auto;
             color: var(--text-muted);
@@ -337,7 +338,7 @@
         }
 
         .footer-col h4 {
-            color: var(--gold);
+            color: var(--gold-dark);
             font-size: 0.95rem;
             letter-spacing: 1.5px;
             text-transform: uppercase;
@@ -353,7 +354,7 @@
         }
 
         .footer-col a:hover {
-            color: var(--gold-light);
+            color: var(--gold-dark);
             padding-left: 4px;
         }
 
@@ -361,7 +362,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding-top: 1.5rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -369,16 +370,18 @@
             gap: 1rem;
         }
 
-        /* Glassmorphism Card Utility */
+        /* Glassmorphism / Luxury White Card */
         .glass-card {
             background: var(--bg-card);
             border: 1px solid var(--gold-border);
             border-radius: 14px;
             padding: 2.5rem;
-            backdrop-filter: var(--glass-blur);
-            -webkit-backdrop-filter: var(--glass-blur);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            box-shadow: 0 14px 38px rgba(184, 134, 11, 0.1);
         }
 
         /* Form Inputs */
@@ -399,8 +402,8 @@
         .form-control {
             width: 100%;
             padding: 0.8rem 1.1rem;
-            background: rgba(10, 10, 10, 0.7);
-            border: 1px solid rgba(212, 175, 55, 0.22);
+            background: #FFFFFF;
+            border: 1px solid rgba(0, 0, 0, 0.15);
             border-radius: 8px;
             color: var(--text-main);
             font-family: inherit;
@@ -411,12 +414,12 @@
 
         .form-control:focus {
             border-color: var(--gold);
-            background: rgba(20, 20, 20, 0.95);
-            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.18);
+            background: #FFFFFF;
+            box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.16);
         }
 
         .form-control::placeholder {
-            color: #555;
+            color: #9E9E9E;
         }
 
         .form-error {
@@ -471,7 +474,7 @@
                         </svg>
                         <span>{{ Auth::user()->nombre }}</span>
                         @if(Auth::user()->isAdmin())
-                            <span style="font-size: 0.68rem; background: var(--gold-gradient); color: #000; padding: 2px 6px; border-radius: 4px; font-weight: 700;">ADMIN</span>
+                            <span style="font-size: 0.68rem; background: var(--gold-gradient); color: #FFFFFF; padding: 2px 6px; border-radius: 4px; font-weight: 700;">ADMIN</span>
                         @endif
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="6 9 12 15 18 9"></polyline>
@@ -479,7 +482,7 @@
                     </button>
 
                     <div class="user-dropdown" id="userDropdown">
-                        <div style="padding: 0.6rem 1.2rem; font-size: 0.75rem; color: var(--text-muted); border-bottom: 1px solid rgba(255,255,255,0.06);">
+                        <div style="padding: 0.6rem 1.2rem; font-size: 0.75rem; color: var(--text-muted); border-bottom: 1px solid rgba(0,0,0,0.06);">
                             Conectado como<br>
                             <strong style="color: var(--text-main);">{{ Auth::user()->correo }}</strong>
                         </div>
@@ -488,7 +491,7 @@
                             Mi Perfil & Envíos
                         </a>
                         @if(Auth::user()->isAdmin())
-                            <a href="{{ route('admin.dashboard') }}" class="dropdown-item" style="color: var(--gold-light);">
+                            <a href="{{ route('admin.dashboard') }}" class="dropdown-item" style="color: var(--gold-dark); font-weight: 600;">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
                                 Panel Administrativo
                             </a>
@@ -496,7 +499,7 @@
                         <div class="dropdown-divider"></div>
                         <form method="POST" action="{{ route('logout') }}" style="margin: 0;">
                             @csrf
-                            <button type="submit" class="dropdown-item" style="color: #FF8077;">
+                            <button type="submit" class="dropdown-item" style="color: var(--danger);">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
                                 Cerrar Sesión
                             </button>
@@ -528,7 +531,7 @@
 
         @if (session('info'))
             <div class="alert alert-info">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12.01" y2="16"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
                 <span>{{ session('info') }}</span>
             </div>
         @endif
@@ -544,7 +547,7 @@
         <div class="footer-grid">
             <div class="footer-col">
                 <h4>Controlux</h4>
-                <p style="line-height: 1.6; color: #777;">
+                <p style="line-height: 1.6; color: var(--text-muted);">
                     Exclusividad, precisión y elegancia. Relojes, perfumes y accesorios importados seleccionados para quienes aprecian la distinción.
                 </p>
             </div>
@@ -567,7 +570,7 @@
         </div>
         <div class="footer-bottom">
             <div>&copy; {{ date('Y') }} Controlux (JC URBAN). Todos los derechos reservados.</div>
-            <div style="color: var(--gold);">Calidad y Garantía Certificada</div>
+            <div style="color: var(--gold-dark); font-weight: 600;">Calidad y Garantía Certificada</div>
         </div>
     </footer>
 

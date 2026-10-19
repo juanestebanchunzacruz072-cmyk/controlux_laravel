@@ -6,16 +6,16 @@
 <div style="min-height: 70vh; display: flex; align-items: center; justify-content: center; padding: 1rem 0;">
     <div class="glass-card" style="max-width: 460px; width: 100%; position: relative; overflow: hidden;">
         <!-- Elemento decorativo dorado -->
-        <div style="position: absolute; top: -50px; right: -50px; width: 130px; height: 130px; background: radial-gradient(circle, rgba(212,175,55,0.2) 0%, transparent 70%); pointer-events: none;"></div>
+        <div style="position: absolute; top: -50px; right: -50px; width: 130px; height: 130px; background: radial-gradient(circle, rgba(212,175,55,0.15) 0%, transparent 70%); pointer-events: none;"></div>
 
         <div style="text-align: center; margin-bottom: 2rem;">
-            <div style="display: inline-flex; padding: 12px; background: rgba(212, 175, 55, 0.08); border: 1px solid var(--gold-border); border-radius: 50%; margin-bottom: 1rem;">
+            <div style="display: inline-flex; padding: 12px; background: rgba(184, 134, 11, 0.08); border: 1px solid var(--gold-border); border-radius: 50%; margin-bottom: 1rem;">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
                     <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                 </svg>
             </div>
-            <h1 style="font-size: 1.6rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-light); margin-bottom: 0.4rem;">
+            <h1 style="font-size: 1.6rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--text-main); margin-bottom: 0.4rem;">
                 Iniciar Sesión
             </h1>
             <p style="color: var(--text-muted); font-size: 0.85rem;">
@@ -29,19 +29,17 @@
             <!-- Correo electrónico -->
             <div class="form-group">
                 <label for="correo" class="form-label">Correo Electrónico</label>
-                <div style="position: relative;">
-                    <input 
-                        type="email" 
-                        id="correo" 
-                        name="correo" 
-                        value="{{ old('correo') }}" 
-                        class="form-control" 
-                        placeholder="tu@correo.com"
-                        required 
-                        autocomplete="email" 
-                        autofocus
-                    >
-                </div>
+                <input 
+                    type="email" 
+                    id="correo" 
+                    name="correo" 
+                    value="{{ old('correo') }}" 
+                    class="form-control" 
+                    placeholder="tu@correo.com"
+                    required 
+                    autocomplete="email" 
+                    autofocus
+                >
                 @error('correo')
                     <span class="form-error">{{ $message }}</span>
                 @enderror
@@ -49,9 +47,7 @@
 
             <!-- Contraseña -->
             <div class="form-group">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.45rem;">
-                    <label for="password" class="form-label" style="margin-bottom: 0;">Contraseña</label>
-                </div>
+                <label for="password" class="form-label">Contraseña</label>
                 <div style="position: relative;">
                     <input 
                         type="password" 
@@ -93,9 +89,9 @@
             </button>
         </form>
 
-        <div style="text-align: center; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.08); font-size: 0.85rem; color: var(--text-muted);">
+        <div style="text-align: center; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(0, 0, 0, 0.08); font-size: 0.85rem; color: var(--text-muted);">
             ¿Aún no tienes una cuenta? 
-            <a href="{{ route('registro') }}" style="color: var(--gold); font-weight: 600; text-decoration: underline;">
+            <a href="{{ route('registro') }}" style="color: var(--gold-dark); font-weight: 700; text-decoration: underline;">
                 Regístrate aquí
             </a>
         </div>
@@ -113,7 +109,7 @@
             toggleBtn.addEventListener('click', function () {
                 const isPassword = passInput.type === 'password';
                 passInput.type = isPassword ? 'text' : 'password';
-                toggleBtn.style.color = isPassword ? 'var(--gold)' : 'var(--text-muted)';
+                toggleBtn.style.color = isPassword ? 'var(--gold-dark)' : 'var(--text-muted)';
             });
         }
     });

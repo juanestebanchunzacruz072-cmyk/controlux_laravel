@@ -6,10 +6,10 @@
 <div style="min-height: 80vh; display: flex; align-items: center; justify-content: center; padding: 2rem 0;">
     <div class="glass-card" style="max-width: 780px; width: 100%; position: relative; overflow: hidden;">
         <!-- Elemento decorativo dorado -->
-        <div style="position: absolute; top: -60px; right: -60px; width: 160px; height: 160px; background: radial-gradient(circle, rgba(212,175,55,0.2) 0%, transparent 70%); pointer-events: none;"></div>
+        <div style="position: absolute; top: -60px; right: -60px; width: 160px; height: 160px; background: radial-gradient(circle, rgba(212,175,55,0.15) 0%, transparent 70%); pointer-events: none;"></div>
 
         <div style="text-align: center; margin-bottom: 2rem;">
-            <div style="display: inline-flex; padding: 12px; background: rgba(212, 175, 55, 0.08); border: 1px solid var(--gold-border); border-radius: 50%; margin-bottom: 1rem;">
+            <div style="display: inline-flex; padding: 12px; background: rgba(184, 134, 11, 0.08); border: 1px solid var(--gold-border); border-radius: 50%; margin-bottom: 1rem;">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                     <circle cx="8.5" cy="7" r="4"></circle>
@@ -17,7 +17,7 @@
                     <line x1="23" y1="11" x2="17" y2="11"></line>
                 </svg>
             </div>
-            <h1 style="font-size: 1.6rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-light); margin-bottom: 0.4rem;">
+            <h1 style="font-size: 1.6rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--text-main); margin-bottom: 0.4rem;">
                 Registro de Cliente
             </h1>
             <p style="color: var(--text-muted); font-size: 0.85rem;">
@@ -30,7 +30,7 @@
 
             <!-- Sección: Información Personal -->
             <div style="margin-bottom: 1.5rem;">
-                <div style="font-size: 0.75rem; font-weight: 700; letter-spacing: 1.5px; color: var(--gold); text-transform: uppercase; margin-bottom: 1rem; border-bottom: 1px solid rgba(212,175,55,0.2); padding-bottom: 0.4rem;">
+                <div style="font-size: 0.75rem; font-weight: 700; letter-spacing: 1.5px; color: var(--gold-dark); text-transform: uppercase; margin-bottom: 1rem; border-bottom: 1px solid var(--gold-border); padding-bottom: 0.4rem;">
                     1. Información Personal
                 </div>
 
@@ -57,7 +57,7 @@
 
             <!-- Sección: Contacto & Acceso -->
             <div style="margin-bottom: 1.5rem;">
-                <div style="font-size: 0.75rem; font-weight: 700; letter-spacing: 1.5px; color: var(--gold); text-transform: uppercase; margin-bottom: 1rem; border-bottom: 1px solid rgba(212,175,55,0.2); padding-bottom: 0.4rem;">
+                <div style="font-size: 0.75rem; font-weight: 700; letter-spacing: 1.5px; color: var(--gold-dark); text-transform: uppercase; margin-bottom: 1rem; border-bottom: 1px solid var(--gold-border); padding-bottom: 0.4rem;">
                     2. Contacto & Credenciales de Acceso
                 </div>
 
@@ -91,7 +91,7 @@
 
             <!-- Sección: Dirección de Envío -->
             <div style="margin-bottom: 1.8rem;">
-                <div style="font-size: 0.75rem; font-weight: 700; letter-spacing: 1.5px; color: var(--gold); text-transform: uppercase; margin-bottom: 1rem; border-bottom: 1px solid rgba(212,175,55,0.2); padding-bottom: 0.4rem;">
+                <div style="font-size: 0.75rem; font-weight: 700; letter-spacing: 1.5px; color: var(--gold-dark); text-transform: uppercase; margin-bottom: 1rem; border-bottom: 1px solid var(--gold-border); padding-bottom: 0.4rem;">
                     3. Dirección de Envío (Para entregas y pedidos)
                 </div>
 
@@ -121,9 +121,9 @@
             </button>
         </form>
 
-        <div style="text-align: center; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.08); font-size: 0.85rem; color: var(--text-muted);">
+        <div style="text-align: center; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(0, 0, 0, 0.08); font-size: 0.85rem; color: var(--text-muted);">
             ¿Ya tienes una cuenta registrada? 
-            <a href="{{ route('login') }}" style="color: var(--gold); font-weight: 600; text-decoration: underline;">
+            <a href="{{ route('login') }}" style="color: var(--gold-dark); font-weight: 700; text-decoration: underline;">
                 Inicia sesión aquí
             </a>
         </div>
